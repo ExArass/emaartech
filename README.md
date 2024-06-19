@@ -10,4 +10,5 @@ In this project, a project was designed using HTML, Bootstrap and CSS features. 
 
 #Screen Prewiev
 
-![emaar-tech](https://github.com/ExArass/emaartech/assets/119482782/5537eff5-e58f-4f21-bf65-30167d1d4261)
+
+![emaar-tech-ezgif com-video-to-gif-converter](https://github.com/ExArass/emaartech/assets/119482782/bbd91381-bf61-435b-93ef-6b98e844957e)
