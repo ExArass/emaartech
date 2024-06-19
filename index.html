@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emartech Website</title>
+    <!-- Bs CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- BS Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Css Link -->
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/emartech-logo.jpeg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg bg-white text-white fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./images/emartech-logo.jpeg"
+            class="w-100"
+            style="height: 50px"
+            alt="logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto text-center mx-4">
+            <a class="nav-link" aria-current="page" href="#">Anasayfa</a>
+            <a class="nav-link" href="#">Popüler</a>
+            <a class="nav-link" href="#">Servis</a>
+            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="#">Yorumlar</a>
+            <a class="nav-link" href="#">Sorular</a>
+            <a class="nav-link btn bg-dark text-white rounded-3" href="#"
+              >Bize Ulaşın</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./images/home6.jpg"
+            class="d-block w-100-height"
+            alt="resim"
+          />
+          <div class="carousel-caption carousel1">
+            <p>1/3</p>
+            <h5>Daha Kolay Keşfedin</h5>
+            <div class="d-flex">
+              <input
+                type="text"
+                class="form-control search w-50"
+                placeholder="Arama..."
+              />
+              <button
+                class="btn btn-light btn-sm justify-content-md-end mx-2 px-3"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./images/home7.jpg"
+            class="d-block w-100-height"
+            alt="resim"
+          />
+          <div class="carousel-caption carousel1">
+            <p>2/3</p>
+            <h5>Gelecek Nesiller İçin</h5>
+            <p><a href="#" class="btn btn-light btn-lg mt-3">Daha Fazla</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./images/home8.jpg"
+            class="d-block w-100-height"
+            alt="resim"
+          />
+          <div class="carousel-caption carousel1">
+            <p>3/3</p>
+            <h5>Emlak Alım Satım Rehberi</h5>
+            <p><a href="#" class="btn btn-light btn-lg mt-3">Daha Fazla</a></p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Popüler Alanı -->
+    <section class="container" style="margin-top: 100px" id="popüler">
+      <p>Popüler</p>
+      <div class="d-flex">
+        <h2>Popüler Rezidanslarımız</h2>
+        <h6 class="ms-auto">Tümünü Keşfedin</h6>
+        <span class="fs-3 fw-bolder arrow-icon">&rarr;</span>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img src="./images/home1.jpg" alt="" class="card-img rounded-0" />
+            <div class="card-body">
+              <p class="card-text">Malatya,Türkiye</p>
+              <div class="d-flex justify-contetn-center mt-3"></div>
+              <p class="mx-2 text-muted card-text">
+                <i class="bi bi-car-front-fill"></i>20dk
+              </p>
+              <p class="mx-2 text-muted card-text">
+                <i class="bi bi-play-fill"></i>8*8
+              </p>
+              <p class="mx-2 text-muted card-text">
+                <i class="bi bi-compass-fill"></i>2000m<sup>2</sup>
+              </p>
+            </div>
+            <div class="d-flex my-2">
+              <button class="btn btn-lg bg-dark text-white fs-6 px-4">
+                Rezervasyon Yap
+              </button>
+              <h5 class="my-auto ms-auto">20.130.048 TL</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img src="./images/home2.jpg" alt="" class="card-img rounded-0" />
+            <div class="card-body">
+              <p class="card-text">İzmir,Türkiye</p>
+              <div class="d-flex justify-contetn-center mt-3"></div>
+              <p class="mx-2 text-muted card-text">
+                <i class="bi bi-car-front-fill"></i>25dk
+              </p>
+              <p class="mx-2 text-muted card-text">
+                <i class="bi bi-play-fill"></i>8*8
+              </p>
+              <p class="mx-2 text-muted card-text">
+                <i class="bi bi-compass-fill"></i>2000m<sup>2</sup>
+              </p>
+            </div>
+            <div class="d-flex my-2">
+              <button class="btn btn-lg bg-dark text-white fs-6 px-4">
+                Rezervasyon Yap
+              </button>
+              <h5 class="my-auto ms-auto">20.130.048 TL</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img src="./images/home3.jpg" alt="" class="card-img rounded-0" />
+            <div class="card-body">
+              <p class="card-text">İstanbul,Türkiye</p>
+              <div class="d-flex justify-contetn-center mt-3"></div>
+              <p class="mx-2 text-muted card-text">
+                <i class="bi bi-car-front-fill"></i>15dk
+              </p>
+              <p class="mx-2 text-muted card-text">
+                <i class="bi bi-play-fill"></i>8*8
+              </p>
+              <p class="mx-2 text-muted card-text">
+                <i class="bi bi-compass-fill"></i>2000m<sup>2</sup>
+              </p>
+            </div>
+            <div class="d-flex my-2">
+              <button class="btn btn-lg bg-dark text-white fs-6 px-4">
+                Rezervasyon Yap
+              </button>
+              <h5 class="my-auto ms-auto">20.130.048 TL</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Dark Area -->
+    <section class="bg-dark" style="margin-top: -150px">
+      <div class="container pt-5">
+        <div class="row" style="margin-top: 25%; color: #b5b5b5">
+          <div class="col-lg-4">
+            <h2>Mehmet Can Seyhan</h2>
+            <p>CEO</p>
+          </div>
+          <div class="col-lg-8">
+            <h6 class="lh-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              iure ut facilis. Quod eveniet quia ullam, quos ab commodi voluptas
+              eos rerum libero animi, repellendus dolor nulla consequuntur in
+              autem!
+            </h6>
+          </div>
+        </div>
+        <hr class="text-light" />
+        <div class="container mt-5 pb-5">
+          <div class="row text-center">
+            <div class="col-md-3 col-sm-6">
+              <img src="./images/logo1.png" class="w-75" alt="" />
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <img src="./images/logo2.png" class="w-75" alt="" />
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <img src="./images/logo3.png" class="w-75" alt="" />
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <img src="./images/logo4.png" class="w-75" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Section -->
+    <section>
+      <div class="text-center pb-5 pt-3">
+        <h2>Hizmetlerimiz</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-12 col-12">
+            <div class="d-flex">
+              <div class="about-img mx-2">
+                <img
+                  src="./images/about1.png"
+                  class="img-fluid h-100 mt-4"
+                  alt=""
+                />
+              </div>
+              <div class="about-img">
+                <img src="./images/about2.png" class="img-fluid h-75" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-12 col-12 mt-5">
+            <div class="about-text">
+              <h2>Konfor Bizim Birinci Önceliğimizdir</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                rerum at maiores nulla tempora hic officia. Quos mollitia,
+                cupiditate est expedita esse provident fuga odit aut veritatis
+                vitae possimus consequatur.
+              </p>
+              <a href="#" class="btn bg-dark text-white px-3"
+                >Daha Fazlası İçin</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- *Blog Section -->
+    <section class="container mt-5" id="blog">
+      <p>Blog</p>
+      <div class="d-flex">
+        <h2>Güncel Konut Bilgileri</h2>
+        <button class="btn bg-dark text-white px-4 btn-md ms-auto">
+          Tümünü Gör
+        </button>
+      </div>
+      <div class="row row-cols-1 row-cols-lg-3 mt-2">
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img
+              src="./images/home3.jpg"
+              class="card-img-top rounded-0 border-0"
+              alt=""
+            />
+            <div class="card-body">
+              <p class="card-text text-muted">01 Haziran 2024</p>
+              <p class="card-text text-muted">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Ratione, similique. Amet eaque nobis, dolores quidem quam maxime
+                cumque? Adipisci mollitia tempore ut rerum vel corporis sit
+                nulla dolor atque modi!
+              </p>
+              <button
+                class="btn text-primary"
+                style="background-color: #d4e8ff"
+              >
+                Daha Fazla Oku
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img
+              src="./images/home2.jpg"
+              class="card-img-top rounded-0 border-0"
+              alt=""
+            />
+            <div class="card-body">
+              <p class="card-text text-muted">01 Haziran 2024</p>
+              <p class="card-text text-muted">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Ratione, similique. Amet eaque nobis, dolores quidem quam maxime
+                cumque? Adipisci mollitia tempore ut rerum vel corporis sit
+                nulla dolor atque modi!
+              </p>
+              <button
+                class="btn text-primary"
+                style="background-color: #d4e8ff"
+              >
+                Daha Fazla Oku
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img
+              src="./images/home1.jpg"
+              class="card-img-top rounded-0 border-0"
+              alt=""
+            />
+            <div class="card-body">
+              <p class="card-text text-muted">01 Haziran 2024</p>
+              <p class="card-text text-muted">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Ratione, similique. Amet eaque nobis, dolores quidem quam maxime
+                cumque? Adipisci mollitia tempore ut rerum vel corporis sit
+                nulla dolor atque modi!
+              </p>
+              <button
+                class="btn text-primary"
+                style="background-color: #d4e8ff"
+              >
+                Daha Fazla Oku
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Rewievs Alanı -->
+    <section class="bg-dark" id="rewiev">
+      <div class="container">
+        <div class="d-flex">
+          <h2 class="text-light">Müşterilerimiz ne diyor?</h2>
+          <div class="ms-auto">
+            <button class="btn btn-md text-light">
+              <span>&larr;</span>
+            </button>
+            <button class="btn btn-md text-light">
+              <span>&rarr;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container row row-cols-1 row-cols-md-2 row-cols-lg-3 mx-auto mt-3 pb-3"
+      >
+        <div class="card border-0 bg-transparent col-md-8">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="./images/team-1.png" class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title text-white">Emre</h5>
+                <p class="card-text text-secondary">
+                  This is a wider card with supporting text below as a natural
+                </p>
+                <p class="card-text text-light">Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card border-0 bg-transparent col-md-8">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="./images/team-2.png" class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title text-white">Mete</h5>
+                <p class="card-text text-secondary">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Cumque ut ab doloribus asperiores in soluta veritatis quasi
+                  optio libero iste itaque natus tempore similique, fuga aperiam
+                  accusamus quibusdam, hic sint.
+                </p>
+                <p class="card-text text-light">Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card border-0 bg-transparent col-md-8">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="./images/team-3.png" class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title text-white">Kemal</h5>
+                <p class="card-text text-secondary">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Obcaecati, tenetur suscipit ab in veniam explicabo.
+                  Voluptates, pariatur nam veritatis ratione delectus error?
+                  Facere tenetur officiis veritatis commodi quis, dignissimos
+                  natus!
+                </p>
+                <p class="card-text text-light">Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Acordion Area -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 mt-3">
+            <div class="about-text">
+              <p>Sorular</p>
+              <h2>Sıkça Sorulan Sorular</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                quidem aspernatur laudantium minus excepturi? Expedita adipisci
+                ab est ipsum obcaecati voluptatibus, totam iusto. Sint maxime
+                qui quod repellendus corrupti ipsum?
+              </p>
+              <a href="#" class="btn bg-dark text-white">Daha Fazlası İçin</a>
+            </div>
+          </div>
+          <!-- Acordion BS -->
+          <div class="accordion mt-5 col-lg-7" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Hizmetlerimiz Nelerdir?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perspiciatis quae amet minus, maiores optio vitae harum
+                    voluptate nihil nisi ipsa porro excepturi earum expedita
+                    quia, corrupti, aliquid voluptatum eaque quas. Nobis,
+                    ratione. Blanditiis magnam qui ratione eligendi, veritatis,
+                    ad corporis non inventore, tempora in doloribus optio unde
+                    dolore adipisci maiores quasi nam. Ut asperiores repellendus
+                    et ipsum. Delectus, hic ipsa? Velit nemo sequi similique
+                    omnis, labore temporibus libero ab itaque id rem modi ipsam
+                    magnam sed iure commodi eveniet beatae dolor eius ex
+                    molestias minus adipisci esse autem? Labore, aut! Qui illum
+                    assumenda facere? Animi qui praesentium facere, magni
+                    veritatis at perferendis sed, iusto quaerat soluta quibusdam
+                    omnis possimus accusamus repellat. Quaerat quos, porro
+                    reprehenderit laborum quisquam corrupti quam quo? Id placeat
+                    inventore incidunt nemo atque sit rem impedit nulla aperiam
+                    recusandae, exercitationem neque! Aut corrupti nemo earum
+                    explicabo, id tempore veritatis neque molestias dolores,
+                    aliquam fuga cum! Expedita, tenetur. Cupiditate temporibus,
+                    distinctio placeat repellat officiis doloribus, nisi nostrum
+                    tempora minima exercitationem facere vel nemo quos
+                    voluptatem id quas ut. Nobis optio, reiciendis voluptates
+                    provident nisi rerum placeat suscipit delectus!
+                    Exercitationem maxime at reprehenderit porro officiis quae
+                    amet dolore corrupti id mollitia eum doloremque quia, et
+                    possimus. Perspiciatis nihil nisi eum libero incidunt sequi
+                    quia corporis beatae necessitatibus quod? Molestiae. Dolor
+                    aspernatur praesentium numquam quidem nihil. Alias, rerum
+                    eos harum totam minus maxime nesciunt, accusantium suscipit
+                    inventore sit eaque facere est sunt nostrum quis, atque sint
+                    adipisci doloribus explicabo esse? Porro sequi et, quis esse
+                    earum similique veritatis eum aspernatur assumenda nulla
+                    deleniti nisi suscipit, ex eligendi molestias iste
+                    voluptatem quod, voluptas quasi nihil itaque. Unde quas
+                    minima animi aliquam! Delectus officiis inventore
+                    reprehenderit dicta dolores voluptatem aperiam voluptatibus
+                    expedita doloribus earum quasi autem illo explicabo neque,
+                    libero numquam? Natus iure omnis dolorem saepe fuga amet
+                    necessitatibus incidunt voluptate accusamus. Ab ipsum culpa
+                    praesentium inventore, odit dicta rerum earum odio voluptate
+                    repellat suscipit accusantium neque consectetur, facere
+                    nesciunt. Laborum iusto voluptatum, magnam quam quae
+                    explicabo animi perspiciatis eaque optio quo. Provident
+                    impedit accusantium sint. Reiciendis repellat dolorum, vero
+                    laboriosam libero aspernatur accusamus cumque fuga
+                    voluptatibus eum consequatur est rem quam voluptatem!
+                    Exercitationem quibusdam cum reiciendis amet omnis earum
+                    odit eaque. Illum assumenda earum veritatis quasi ab iusto,
+                    quibusdam molestiae sit rerum. Pariatur, sit. Voluptates,
+                    aliquid eaque beatae debitis, porro facere in corrupti
+                    tempora architecto rem magni totam repudiandae quod labore?
+                    Atque ducimus consequatur officiis ipsa corrupti neque nemo
+                    eligendi reprehenderit nulla et, molestiae harum vel maiores
+                    vitae corporis accusamus soluta labore necessitatibus
+                    laborum repellat sequi quo. Animi perspiciatis enim minus!
+                    Modi aliquam, cumque amet animi quis alias numquam est ea
+                    et, porro dignissimos quisquam aspernatur debitis nesciunt
+                    odio repellat commodi, dolorum quae. Deleniti nam nesciunt
+                    tempore corrupti quis, impedit ratione. Maiores iusto
+                    praesentium alias ullam qui iure repellat rem tempore
+                    debitis incidunt dolor, modi fugit minus provident non sed
+                    reprehenderit eligendi harum sequi totam at impedit eos?
+                    Consequatur, natus esse. Saepe ex similique, in voluptates
+                    reprehenderit commodi tempore odit, non sunt aut ut
+                    corporis! Fugiat, ad nam. Pariatur a adipisci magnam
+                    praesentium doloremque mollitia, id inventore, quae velit
+                    error reprehenderit! Quo vero impedit accusamus reiciendis
+                    asperiores ad voluptates excepturi quisquam tempora ipsum
+                    labore porro, vel ab quae voluptatibus id corporis,
+                    temporibus deleniti quia a voluptatum quod? Inventore soluta
+                    nisi animi. Pariatur maxime facilis sit ut, eaque officiis
+                    hic asperiores, minima nulla dolores voluptatibus facere
+                    earum recusandae aut et molestias perferendis distinctio
+                    omnis provident doloribus quo totam architecto. Earum,
+                    cupiditate dolorum. Fuga laborum animi, consequuntur rem
+                    nemo quaerat assumenda quod ut. Eligendi reprehenderit
+                    explicabo doloribus corporis asperiores? Vitae itaque
+                    consectetur autem nam, necessitatibus minima quisquam
+                    repudiandae at temporibus ratione veniam fuga.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Faaliyetleriniz Nelerdir?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cumque eaque nulla doloremque modi dolorum incidunt at? Odio
+                    esse necessitatibus consectetur qui fugiat porro ipsa,
+                    aperiam dolore fuga delectus error debitis? Magnam maxime
+                    quia labore autem. Blanditiis officiis sint quisquam
+                    incidunt et perferendis tempora quia fuga praesentium,
+                    eveniet, nihil, doloribus suscipit! Distinctio deleniti
+                    nostrum at nisi nam culpa, eum ipsam sed. Molestias, est ea
+                    laudantium voluptatibus fugiat facere harum error
+                    voluptates! Nulla velit asperiores quibusdam ea natus modi
+                    suscipit obcaecati nostrum quaerat, rerum, veniam sequi ad
+                    labore corporis hic inventore. Perferendis! Dolorem impedit
+                    voluptatibus totam atque! Suscipit est modi, a impedit
+                    architecto eum id beatae! In, voluptate tempora veritatis
+                    ducimus iste accusamus ea consequuntur? Temporibus tempora
+                    recusandae quaerat incidunt facere voluptate! Reprehenderit
+                    reiciendis quasi ab sit temporibus aliquid, tempora atque
+                    modi accusamus perspiciatis ipsa commodi, esse cupiditate!
+                    Nesciunt laboriosam quibusdam dolor, doloremque asperiores
+                    cum deleniti labore autem illo architecto neque accusamus.
+                    Harum quae odit, dolores vitae, nam minima nesciunt illo
+                    necessitatibus, rerum voluptatem totam autem nobis in
+                    architecto provident vel repellendus! Architecto, laborum!
+                    In aspernatur repudiandae voluptatem nihil officiis cumque
+                    quod! Sapiente a vitae minima, ipsa, perferendis assumenda
+                    vero eaque at molestiae soluta reiciendis mollitia? Tenetur
+                    distinctio officiis optio similique facilis praesentium
+                    molestiae quos dolore molestias modi, tempora a eos
+                    mollitia! Iure corrupti fugiat, repudiandae autem asperiores
+                    mollitia dolore qui provident iusto fuga vel quasi quia,
+                    praesentium velit, quisquam assumenda reiciendis adipisci
+                    sint deserunt. Sed aspernatur voluptatum cumque, nisi quis
+                    ea! Minus nulla distinctio vitae unde error mollitia, cum,
+                    minima repudiandae accusamus doloremque obcaecati eos
+                    tempora quia, deleniti veniam beatae eaque officia nemo sed
+                    aliquam corrupti dicta sequi itaque sit. Quam? Temporibus,
+                    modi tempora nisi itaque dolore ratione magni voluptatibus
+                    magnam repudiandae explicabo voluptatem culpa iste earum
+                    maiores architecto dignissimos beatae neque dolorem hic!
+                    Natus quas incidunt laudantium veritatis quidem sunt!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Bizimle Bir Yolculuğa Çıkmak İster misiniz?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Amet expedita labore sunt asperiores aliquid at illum nam
+                    voluptates, est officia, quasi commodi, voluptatum fugit
+                    molestias ducimus iusto nobis sed modi! Doloremque quia, ab
+                    magnam ratione quos vel iusto in voluptas blanditiis
+                    voluptates molestiae sunt quasi dolor eum laboriosam rem
+                    excepturi soluta omnis eveniet aperiam! Eveniet quisquam
+                    ipsa eligendi dolores corrupti. Error officiis molestias nam
+                    odit magni? Commodi eius hic in neque dignissimos, labore
+                    quaerat officiis numquam consequuntur nemo laborum aperiam
+                    atque quis vel eligendi enim, quo mollitia esse soluta
+                    voluptatem. Ut eaque fuga suscipit tempora architecto
+                    provident, ad aliquid in minus atque vero, enim voluptatibus
+                    recusandae beatae quam reiciendis modi autem error quo qui
+                    velit accusamus perspiciatis eum eligendi? Nemo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h5>Bizim Hakkımızda</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              veniam laudantium vitae, officia magnam quam nostrum neque
+              consequatur possimus inventore sunt maxime hic adipisci! Tenetur
+              perspiciatis dolorum odit voluptas dicta.
+            </p>
+            <p><i class="bi bi-crosshair"></i>İstanbul</p>
+            <p><i class="bi bi-telephone-fill"></i>444 444 444</p>
+            <p><i class="bi bi-envelope"></i>info@gmail.com</p>
+          </div>
+          <div class="col-lg-3">
+            <h5>Hızlı Bağlantılar</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-light">Anasayfa</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-light">Popüler</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-light"
+                  >Hizmetlerimiz</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-light">Haberler</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-light">İletişim</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5>Bize Ulaşmak İçin</h5>
+            <ul class="list-unstyled"></ul>
+            <li><i class="bi bi-facebook"></i>Facebook</li>
+            <li><i class="bi bi-instagram"></i>Instagram</li>
+            <li><i class="bi bi-twitter"></i>Twitter</li>
+            <li><i class="bi bi-youtube"></i>Youtube</li>
+            <li><i class="bi bi-linkedin"></i>Linkedin</li>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="text-center">
+              &copy;
+              <a href="#" class="text-secondary text-decoration-none"
+                >Emaartech</a
+              >
+              Tüm Hakları Saklıdır
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bs JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
